@@ -1,0 +1,13 @@
+﻿@model MixedModeExample.Models.MixedModel
+
+@{
+	ViewBag.Title = @Model.CMSData.Page.Title;
+}
+
+<h2>@Model.CMSData.Page.Title</h2>
+
+<p>This is a mixed controller that has loaded the model manually into its pre-existing model. @Model.Now </p>
+
+<p>And here is the dynamic content.</p>
+
+@Model.CMSData.Regions.Content
